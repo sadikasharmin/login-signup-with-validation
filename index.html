@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="input.css">
+    <title> Sign in / Sign Up Form </title>
+</head>
+<body>
+    <div class=" items-center text-center bg-blue-900 h-screen w-screen relative my-0 flex justify-center">
+        <div class="md:max-w-2xl inner bg-white text-black max-w-xl mx-auto p-16 rounded-lg">
+            <div class="btn-box rounded shadow-sm shadow-slate-300 w-50 inline-block">
+                <button id="login" class="m-4 font-bold border-b-2 border-sky-900" onclick="signIn()">login</button>
+                <button id="signUp" class="m-4 font-bold " onclick="signUp()">Resistration</button>
+            </div>
+            <div id ="loginForm" class="form-field m-4 text-center justify-center">
+                <form action="/" name="myForm">
+                    <input type="text" name="fname" placeholder="Enter your name" required class="w-full border-cyan-700 border-2 px-5 py-3 m-2 rounded-xl ">
+                    <input type="password" name="password" placeholder="Enter your password" required class="w-full border-cyan-700 border-2 px-5 py-3 m-2 rounded-xl ">
+
+                    <input type="submit" class="font-bold bg-blue-900 text-white py-3 px-8 rounded-xl m-3">
+                </form>
+            </div>
+
+            <!-- registration -->
+
+            <div id ="signUpForm" class="form-field m-4 text-center justify-center" onsubmit="return(validation());">
+                <form action="/" name="RegForm">
+                    <input type="text" name="Name" placeholder="Enter your name" required class="w-full border-cyan-700 border-2 px-5 py-3 m-2 rounded-xl ">
+                    <input type="text" name="EMail" placeholder="Enter your Email" required class="w-full border-cyan-700 border-2 px-5 py-3 m-2 rounded-xl ">
+                    <input type="text" name="Telephone" placeholder="Enter your Telephone" required class="w-full border-cyan-700 border-2 px-5 py-3 m-2 rounded-xl ">
+                    <input type="password" name="Password" placeholder="Enter your password" required class="w-full border-cyan-700 border-2 px-5 py-3 m-2 rounded-xl ">
+
+                    <input type="submit" value="Registration" class="font-bold bg-blue-900 text-white py-3 px-8 rounded-xl m-3">
+                </form>
+            </div>
+            <div class="social-icon">
+                <h2></h2>
+            </div>
+        </div>
+    </div>
+
+    <script src="add.js"></script>
+</body>
+</html>
